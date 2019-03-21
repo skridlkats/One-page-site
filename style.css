@@ -6,11 +6,11 @@ body {
     text-align: center;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px;
     padding: 0px;
     background:#ABACD3;
-    color: black;      
+    color: black;
    }
 
 /* Menu  */
@@ -24,8 +24,6 @@ body {
   margin: 0;
 }
 .main-menu li {
-  /* ?????? ???? ??????????? ??????????? */
-  /* ?????? ????? ?????? 100% */
   font-size: 1em;
   display: block;
   width: 100%;
@@ -45,7 +43,6 @@ body {
 .toggle-button {
   text-align: center;
   display: block;
-  /* ?? ???????? ???? ??????? ????? ?????? ???? ?????? */
   cursor: pointer;
   background-color: #333;
   color: #fff;
@@ -67,8 +64,9 @@ body {
 }
 
 .container {
-    background-color: lightblue;
-    color: #400040 /* text */
+    margin-top: 10;
+    background-color: #BDBDDF;
+    color: #333 /* text */
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, 100px);
@@ -86,7 +84,6 @@ body {
       height: 30px;
     }
     .main-menu li {
-      /* ???? <li> ??????????? ? ??? */
       width: calc(100% / 5);
       text-align: center;
       display: inline-block;
