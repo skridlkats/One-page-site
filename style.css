@@ -5,23 +5,19 @@ body {
 .header {
     text-align: center;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-
     font-size: 30px;
     margin: 0px;
     padding: 0px;
     background:#ABACD3;
     color: black;
    }
-
-/* Menu  */
 #menu-checkbox {
   display: none;
 }
 .main-menu {
-  /* ?????? ???? ?????? */
-  display: none;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  padding: 0px;
+  margin: 0px;
 }
 .main-menu li {
   font-size: 1em;
@@ -30,7 +26,6 @@ body {
   background-color: #333;
 }
 .main-menu a {
-  /* ??????? ????????? ?????? */
   display: block;
   border-bottom: 1px solid blueviolet;
   color: lightslategray;
@@ -40,31 +35,10 @@ body {
 .main-menu a:hover {
   text-decoration: underline;
 }
-.toggle-button {
-  text-align: center;
-  display: block;
-  cursor: pointer;
-  background-color: #333;
-  color: #fff;
-}
-.toggle-button:after {
-  /* ???????? ?????? ?? ???????? data-open ? html */
-  content: attr(data-open);
-  display: block;
-  margin: 10px 0;
-  padding: 10px 30px;
-
-}
-#menu-checkbox:checked + nav[role="navigation"] .main-menu {
-  /* ????? ??????? ??????? ???? ?????????? ??????? */
-  display: block;
-}
-#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
-  content: attr(data-close);
-}
 
 .container {
-    margin-top: 10;
+    margin-top: 10px;
+    padding: 50px;
     background-color: #BDBDDF;
     color: #333 /* text */
     display: grid;
@@ -72,11 +46,26 @@ body {
     grid-template-columns: repeat(auto-fit, 100px);
     grid-template-rows: repeat(2, 100px);
 }
-@media screen and (min-width: 640px) {
-    .toggle-button {
-      /* label ????? */
-      display: none;
-    }
+
+.footer {
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 30px;
+    background:#333;
+    color: #ABACD3;
+   }
+@media screen and (min-width: 321px) and (min-height: 321px){
+    .header {
+     text-align: center;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     margin: 0px;
+     padding: 0px;
+     background:#ABACD3;
+     color: black;
+   }
     .main-menu {
       display: block;
       margin: 0 auto;
@@ -92,7 +81,6 @@ body {
     }
     .main-menu a {
       display: inline-block;
-      margin-right: -4px;
       font-size: .8em;
       background-color: #333;
       text-decoration: none;
@@ -100,5 +88,5 @@ body {
       text-transform: capitalize;
       border-bottom: 0;
     }
-  }
+}
 
